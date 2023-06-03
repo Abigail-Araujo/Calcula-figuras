@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcula figuras</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+</head>
+<body>
+    <header>
+        <h1>Figuras geométricas</h1>
+        <p>Calcular diferentes medidas como área y perímetro de figuras geométricas</p>
+    </header>
+    <div id="answer">
+        <p id="answerp">Aquí aparecerá el resultado</p>
+    </div>
+    <section class="figure">
+        <div class="box">
+            <div class="box-header">
+                <h2>Cuadrado</h2>
+            </div>
+            <div class="box-content">
+                <p>¿Cúanto mide cada lado de tu cuadrado?</p>
+                <input class="box-input" type="number" name="side" id="side" placeholder="Ingrese un lado">
+                <button class="box-button" type="button" onclick="areacuadrado()">Área</button>
+                <button class="box-button" type="button" onclick="perimetrocuadrado()">Perímetro</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-header">
+                <h2>Triángulo</h2>
+            </div>
+            <div class="box-content">
+                <p>¿Cúanto mide cada lado de tu triángulo?</p>
+                <input class="box-input" type="number" name="side1" id="side1" placeholder="Ingrese el lado 1">
+                <input class="box-input" type="number" name="side2" id="side2" placeholder="Ingrese el lado 2">
+                <input class="box-input" type="number" name="side3" id="side3" placeholder="Ingrese el lado 3">
+                <button class="box-button" type="button" onclick="perimetrotriangulo()">Perímetro</button>
+                <p>¿Cúanto mide la base y altura de tu triángulo?</p>
+                <input class="box-input" type="number" name="base" id="base" placeholder="Ingrese la base">
+                <input class="box-input" type="number" name="high" id="high" placeholder="Ingrese la altura">
+                <button class="box-button" type="button" onclick="areatriangulo()">Área</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-header">
+                <h2>Círculo</h2>
+            </div>
+            <div class="box-content">
+                <p>¿Cúanto mide el radio de tu círculo?</p>
+                <input class="box-input" type="number" name="radio" id="radio" placeholder="Ingrese el radio">
+                <button class="box-button" type="button" onclick="diametrocirculo()">Diámetro</button>
+                <button class="box-button" type="button" onclick="perimetrocirculo()">Perímetro</button>
+                <button class="box-button" type="button" onclick="areacirculo()">Área</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

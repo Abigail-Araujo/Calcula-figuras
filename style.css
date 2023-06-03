@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: white;
+}
+
+header{
+    background-color: #253062;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+header h1{
+    color: white;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+header p{
+    color: white;
+    padding: 10px 0px;
+}
+
+#answer{
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px 0px;
+}
+
+#answer p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.figure {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+}
+
+.box{
+    width: 30%;
+    height: 600px;
+    border: 3px solid #253062;
+    border-radius: 10px;
+    margin: 15px;
+    float: left;
+}
+
+.box-header{
+    background-color: #253062;
+    padding: 10px;
+    text-align: center;
+    padding: 15px 0px;
+    color: white;
+}
+
+.box-content{
+    text-align: center;
+    padding: 10px;
+}
+
+.box-content p{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box-input {
+    height: 40px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    color: #253062;
+    border: solid #253062;
+    border-radius: 5px;
+}
+
+.box-button{
+    background-color: #253062;
+    color: white;
+    width: 120px;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.box-button:hover{
+    cursor: pointer;
+    background-color: #1a2144;
+}
+
+.box-button:active{
+    background-color: #475cbb;
+}
+
+/* Responsive */
+@media (max-width:955px) {
+    .figure{
+        width: 100%;
+    }
+}
+
+@media (max-width:855px) {
+    .figure{
+        display: grid;
+        place-items: center;
+    }
+    .box{
+        width: 100%;
+        height: auto;
+    }
+    .box-input{
+        margin: 10px auto;
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media (max-width:600px) {
+    .figure{
+        width: 90%;
+    }
+    header h1{
+        font-size: 30px;
+    }
+    header p{
+        margin: 0px 5px;
+    }
+}
